@@ -1,0 +1,9 @@
+version: '3'
+services:
+  consul:
+    image: consul:latest
+    ports:
+      - "8500:8500"
+networks:
+  docker_verypay:
+    external: true
