@@ -6,7 +6,7 @@ services:
     environment:
       - ALLOW_NONE_AUTHENTICATION=yes
     volumes:
-      - /usr/local/var/etcd:/bitnami/etcd
+      - $HOME/data/etcd:/bitnami/etcd
     ports:
       - "2379:2379"
       - "2380:2380"

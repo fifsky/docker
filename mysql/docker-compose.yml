@@ -9,7 +9,7 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - /usr/local/var/mysql:/var/lib/mysql
+      - $HOME/data/mysql:/var/lib/mysql
       - ./conf.d:/etc/mysql/conf.d
 networks:
   docker_verypay:
